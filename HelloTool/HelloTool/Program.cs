@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HelloWorld {
+namespace HelloTool {
     class Program {
         static void Main(string[] args) {
             Console.WriteLine("Hello World!");

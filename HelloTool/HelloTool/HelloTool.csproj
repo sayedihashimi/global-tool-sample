@@ -5,7 +5,7 @@
         
     <!-- global tool related properties -->
     <PackAsTool>true</PackAsTool>
-    <ToolCommandName>helloworld</ToolCommandName>
+    <ToolCommandName>hellotool</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>
     
     <!-- nuget related properties -->
