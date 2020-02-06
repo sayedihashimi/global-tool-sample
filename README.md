@@ -1,0 +1,1 @@
+This repo contains some basic samples for .NET Core Global Tools.
