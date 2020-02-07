@@ -7,7 +7,7 @@ namespace HelloTool {
             var app = new CommandLineApplication();
 
             app.OnExecute(() => {
-                Console.WriteLine("Hello2 World!");
+                Console.WriteLine("Hello World, using the Builder API!");
             });
 
             return app.Execute(args);
