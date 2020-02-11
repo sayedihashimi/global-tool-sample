@@ -19,6 +19,6 @@
     <PackageType>DotNetCliTool</PackageType>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="2.5.1" />
+    <PackageReference Include="System.CommandLine.DragonFruit" Version="0.3.0-alpha.20104.2" />
   </ItemGroup>
 </Project>
