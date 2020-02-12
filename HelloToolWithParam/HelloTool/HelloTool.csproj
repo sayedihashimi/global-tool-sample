@@ -21,4 +21,16 @@
   <ItemGroup>
     <PackageReference Include="System.CommandLine.DragonFruit" Version="0.3.0-alpha.20104.2" />
   </ItemGroup>
+    
+<!-- call this target with dotnet build -t:InstallTool -->
+<Target Name="InstallTool" DependsOnTargets="Pack">
+    <Exec Command="dotnet tool uninstall --global $(ToolCommandName)" IgnoreExitCode="true"/>
+    <Exec Command="dotnet tool install --global --add-source $(PackageOutputPath) $(ToolCommandName)"/>
+    <Exec Command="$(ToolCommandName) --help" />
+</Target>
+ 
+    <Target Name="SayedDemo">
+        <Message Text="PackageOutputPath file: $(PackageOutputPath)" Importance="high"/>
+    </Target>
+    
 </Project>
